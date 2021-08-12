@@ -1,0 +1,14 @@
+[2021-08-11 23:38:27] glpiphplog.WARNING: Session::loadLanguage() in /var/www/html/glpi/inc/session.class.php line 630
+Missing required intl PHP extension  {"user":"@73cef384a557"} 
+[2021-08-11 23:38:29] glpiphplog.WARNING: Session::loadLanguage() in /var/www/html/glpi/inc/session.class.php line 630
+Missing required intl PHP extension  {"user":"@73cef384a557"} 
+[2021-08-11 23:38:33] glpiphplog.WARNING: Session::loadLanguage() in /var/www/html/glpi/inc/session.class.php line 630
+Missing required intl PHP extension  {"user":"@73cef384a557"} 
+[2021-08-11 23:38:36] glpiphplog.WARNING: Session::loadLanguage() in /var/www/html/glpi/inc/session.class.php line 630
+Missing required intl PHP extension  {"user":"@73cef384a557"} 
+[2021-08-11 23:38:36] glpiphplog.WARNING: Test logger  
+[2021-08-11 23:49:35] glpiphplog.WARNING: Test logger  
+[2021-08-11 23:52:53] glpiphplog.CRITICAL:   *** Uncaught Exception TypeError: Argument 2 passed to Glpi\Marketplace\View::getPaginationHtml() must be of the type integer, string given, called in /var/www/html/glpi/ajax/marketplace.php on line 115 in /var/www/html/glpi/inc/marketplace/view.class.php at line 875
+  Backtrace :
+  ajax/marketplace.php:115                           Glpi\Marketplace\View::getPaginationHtml()
+  

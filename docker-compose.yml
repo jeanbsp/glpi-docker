@@ -1,0 +1,20 @@
+version: "3.7"
+
+services:
+    glpi:
+        container_name: "glpi-9.5"
+        image: glpi-ans:1.0
+        ports:
+            - "8080:80"
+        volumes:
+                - "./conf/glpi:/var/www/html/glpi:rw"
+    db:
+        image: "mysql:5.7"
+        restart: "always"
+        environment:
+            MYSQL_RANDOM_ROOT_PASSWORD: "yes"
+            MYSQL_DATABASE: "glpi"
+            MYSQL_USER: "glpi"
+            MYSQL_PASSWORD: "glpi"
+        volumes:
+            - "./db:/var/lib/mysql"
