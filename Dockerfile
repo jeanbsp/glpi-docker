@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM 7.3-apache-stretch
 LABEL maintainer="marcos.fr.rocha@gmail.com"
 ENV GLPI_VERSION 9.3
 ENV LAST_RELEASE 9.3.0
@@ -9,28 +9,28 @@ RUN apt update && apt install tzdata -y \
 	&&  echo "America/Sao_Paulo" > /etc/timezone \
 	&& dpkg-reconfigure -f noninteractive tzdata \
 	&&  apt  install -y \
-	php7.2 \
-	php7.2-xml \
-	php7.2-opcache \
+	php7.3 \
+	php7.3-xml \
+	php7.3-opcache \
 	php-apcu \
-	php7.2-bcmath \
-	php7.2-imap \
+	php7.3-bcmath \
+	php7.3-imap \
 	php-cas \
-	php7.2-soap \
-	php7.2-cli \
-	php7.2-common \
-	php7.2-snmp \
-	php7.2-xmlrpc \
-	php7.2-gd \
-	php7.2-ldap \
+	php7.3-soap \
+	php7.3-cli \
+	php7.3-common \
+	php7.3-snmp \
+	php7.3-xmlrpc \
+	php7.3-gd \
+	php7.3-ldap \
         php-cas \
-        php7.2-intl \
-        php7.2-zip \
-        php7.2-bz2 \
-	libapache2-mod-php7.2 \
-	php7.2-curl \
-	php7.2-mbstring \
-	php7.2-mysql \
+        php7.3-intl \
+        php7.3-zip \
+        php7.3-bz2 \
+	libapache2-mod-php7.3 \
+	php7.3-curl \
+	php7.3-mbstring \
+	php7.3-mysql \
 	php-dev \
 	php-pear \
 	apache2 \
