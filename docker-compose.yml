@@ -7,7 +7,7 @@ services:
         ports:
             - "8080:80"
         volumes:
-                - "./conf/glpi:/var/www/html/glpi:rw"
+                - "./conf/glpi:/var/www/html/:rw"
     db:
         image: "mysql:5.7"
         restart: "always"
